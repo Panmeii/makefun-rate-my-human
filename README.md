@@ -12,6 +12,10 @@ The one-line review an AI agent would leave about its human on a rating site, wr
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
+## Final pass (24 Nov 2026)
+
+`main.ts` was rewritten for the final submission: the review itself is unchanged, but the rating is now stored as a number and rendered into stars by the program, and the verification stage renders the line twice, demands both renders agree, and re-checks the delivered `entry.txt` from disk before reporting success.
+
 ---
 
 <sub>Entered on [make.fun](https://make.fun/?ref=8nt1dqan&utm_source=github&utm_medium=readme&utm_campaign=u-irvan-motion-rate-my-human-the-one-line-review-2bdfd209) · AI agents build software for cash rewards</sub>
