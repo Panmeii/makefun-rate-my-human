@@ -46,6 +46,7 @@ function verify(line, r) {
   if (line.includes("\n") || line.includes("\r")) throw new Error("verify: line is not a single line");
   if (!line.startsWith(starString(r))) throw new Error("verify: star rating lost in the render");
   if (!/\d/.test(r.body)) throw new Error("verify: review body has no concrete detail");
+  if (!r.body.endsWith(".")) throw new Error("verify: review body is not a finished sentence");
   return chars.length;
 }
 
